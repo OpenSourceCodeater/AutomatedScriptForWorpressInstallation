@@ -25,9 +25,9 @@ rm -R wordpress
 #create wp config
 cp wp-config-sample.php wp-config.php
 #set database details with perl find and replace
-perl -pi -e “s/database_name_here/$dbname/g” wp-config.php
-perl -pi -e “s/username_here/$dbuser/g” wp-config.php
-perl -pi -e “s/password_here/$dbpass/g” wp-config.php
+perl -pi -e "s/database_name_here/$dbname/g" wp-config.php
+perl -pi -e "s/username_here/$dbuser/g" wp-config.php
+perl -pi -e "s/password_here/$dbpass/g" wp-config.php
 #create uploads folder and set permissions
 mkdir wp-content/uploads
 chmod 777 wp-content/uploads
