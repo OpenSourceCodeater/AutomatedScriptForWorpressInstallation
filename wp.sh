@@ -1,4 +1,8 @@
 #!/bin/bash -e
+clear
+echo "============================================"
+echo "WordPress Install Script"
+echo "============================================"
 echo "Database Name: "
 read -e dbname
 echo "Database User: "
