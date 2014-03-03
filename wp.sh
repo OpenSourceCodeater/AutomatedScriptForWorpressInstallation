@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 echo "Database Name: "
 read -e dbname
 echo "Database User: "
@@ -10,6 +10,9 @@ read -e run
 if [ "$run" == n ] ; then
 exit
 else
+echo "============================================"
+echo "A robot is now installing WordPress for you."
+echo "============================================"
 #download wordpress
 curl -O http://wordpress.org/latest.tar.gz
 #unzip wordpress
@@ -35,4 +38,7 @@ chmod 777 wp-content/uploads
 rm latest.tar.gz
 #remove bash script
 rm wp.sh
+echo "========================="
+echo "Installation is complete."
+echo "========================="
 fi
