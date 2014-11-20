@@ -18,7 +18,7 @@ echo "============================================"
 echo "A robot is now installing WordPress for you."
 echo "============================================"
 #download wordpress
-curl -O http://wordpress.org/latest.tar.gz
+curl -O https://wordpress.org/latest.tar.gz
 #unzip wordpress
 tar -zxvf latest.tar.gz
 #change dir to wordpress
